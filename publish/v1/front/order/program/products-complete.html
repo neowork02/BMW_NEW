@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link
+      href="../../../../../static/assets/v1/css/ui.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section">
+        <a href="#voucher" class="button popOpen">바우처 적용</a>
+      </div>
+    </section>
+    <script>
+      $(function () {
+        layerPopup.open("#voucher");
+      });
+    </script>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="voucher" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 65rem">
+        <div class="layerHeader">
+          <h1>바우처 적용</h1>
+        </div>
+        <div class="popCont">
+          <h2>바우처 등록</h2>
+          <div class="formBox flex mt15">
+            <div class="inputBox">
+              <input type="text" placeholder="바우처 번호를 입력해주세요." />
+            </div>
+            <a href="#" class="button flex00 black fwNormal">조회하기</a>
+          </div>
+          <div class="grayBox mt20 block type2">
+            <p class="">
+              ※ 바우처 번호를 보유하신 경우 아래의 바우처 등록하기 버튼을 통해
+              등록을 진행해 주세요.
+            </p>
+            <p class="">
+              ※ 등록이 완료되더라도 사용조건에 맞지 않는 바우처는 노출되지
+              않습니다.
+            </p>
+            <p class="">
+              ※ 바우처 상세 사용 조건은 My page &gt; 나의 바우처에서 확인
+              가능합니다.
+            </p>
+          </div>
+
+          <!-- 바우처 리스트 -->
+          <div>
+            <h2 class="mt45">Test Drive</h2>
+            <div class="voucherBox">
+              <div class="left">
+                <p class="tit">BMW 32Oi M Sport Package</p>
+                <p class="text">2023년 1월 27일(일) / 오전 9:40</p>
+              </div>
+              <div class="right">
+                <div class="radio">
+                  <input type="radio" id="radio1_1" name="radioG1" /><label
+                    for="radio1_1"
+                    class="mr0"
+                    ><i></i>적용 안함</label
+                  >
+                </div>
+                <div class="radio mt10">
+                  <input
+                    type="radio"
+                    id="radio1_2"
+                    name="radioG1"
+                    checked
+                  /><label for="radio1_2" class="mr0"
+                    ><i></i>바우처 적용(적용 가능한 바우처 없음)</label
+                  >
+                </div>
+                <div class="selectContBox mt10">
+                  <a href="#">바우처를 선택해 주세요</a>
+                  <div class="view">
+                    <a href="#">
+                      <p class="fc262626">Test Drive 할인 바우처</p>
+                      <p><span class="fcPoint">10% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive 할인 바우처</p>
+                      <p><span class="fcPoint">20% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive 할인 바우처</p>
+                      <p><span class="fcPoint">30% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive 할인 바우처</p>
+                      <p><span class="fcPoint">40% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //바우처 리스트 -->
+
+          <!-- 바우처 리스트 -->
+          <div>
+            <h2 class="mt45">Test Drive</h2>
+            <div class="voucherBox">
+              <div class="left">
+                <p class="tit">BMW 32Oi M Sport Package</p>
+                <p class="text">2023년 1월 27일(일) / 오전 9:40</p>
+              </div>
+              <div class="right">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="radio2_1"
+                    name="radioG2"
+                    checked
+                  /><label for="radio2_1" class="mr0"><i></i>적용 안함</label>
+                </div>
+                <div class="radio mt10">
+                  <input
+                    type="radio"
+                    id="radio2_2"
+                    name="radioG2"
+                    disabled
+                  /><label for="radio2_2" class="mr0"
+                    ><i></i>바우처 적용(적용 가능한 바우처 없음)</label
+                  >
+                </div>
+                <!-- <div class="selectContBox mt10">
+                  <a href="#">바우처를 선택해 주세요</a>
+                  <div class="view">
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">10% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">20% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">30% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">40% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- //바우처 리스트 -->
+        </div>
+        <div class="popBtnGroup">
+          <button class="button bold">바우처 적용하기</button>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <!-- //팝업 -->
+
+    <script></script>
+  </body>
+</html>

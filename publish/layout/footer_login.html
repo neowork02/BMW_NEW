@@ -1,0 +1,137 @@
+<!-- 헤더영역 -->
+<div id="header">
+  <div class="section">
+    <h1 class="logo"><a href="#">Driving center</a></h1>
+    <div
+      class="locationBox"
+      data-include="../../../layout/reserve_location.html"
+    ></div>
+    <div class="right">
+      <div class="language">
+        <a href="#"><i class="ico_lang_en">영문사이트로 이동</i></a>
+        <!-- <a href="#"><i class="ico_lang_kr">국문사이트로 이동</i></a> -->
+      </div>
+      <div class="user">
+        <a href="#"><i class="ico_user">회원</i></a>
+        <!-- 2023-03-21 -->
+        <!-- 로그인 전-->
+        <div class="userCheckBox">
+          <h2>BMW Driving Center에 오신 것을 환영합니다</h2>
+          <p class="text">
+            <i class="ico_bmw_color"></i>BMW ID 등록 후 고객님을 위한 서비스와
+            혜택을 이용해 보세요.
+          </p>
+          <ul>
+            <li>
+              <i class="ico_check"></i>탑승을 희망하는 BMW/MINI 차량을
+              예약해보세요.
+            </li>
+            <li>
+              <i class="ico_check"></i>회원에게 전용 발급되는 Driving 바우처를
+              이용해 보세요.
+            </li>
+            <li>
+              <i class="ico_check"></i>예약 내역 관리와 함께 프로그램 이수
+              내역을 확인해 보세요.
+            </li>
+          </ul>
+
+          <div class="btnGroup">
+            <a href="#" class="button">로그인</a>
+            <a href="#" class="button line">회원가입</a>
+          </div>
+
+          <a href="#" class="btnMenuClose">메뉴닫기</a>
+        </div>
+
+        <!-- 로그인 후 -->
+        <!-- <div class="userCheckBox">
+                    <h2 class="ml0">
+                        SYSY님 Driving Center에 오신 것을 환영합니다.
+                    </h2>
+                    <ul class="mt60">
+                        <li class="pl0"><a href="#" class="fz20 fcfff bold">Driving 프로그램 예약 <i class="icoArrow3 ml10 mtm2"></i></a></li>
+                        <li class="pl0"><a href="#" class="fz20 fcfff bold">주니어 캠퍼스 예약 <i class="icoArrow3 ml10 mtm2"></i></a></li>
+                        <li class="pl0">
+                            <a href="#" class="fz20 fcfff bold">마이 페이지 <i class="icoArrow3 ml10 mtm2"></i></a>
+                            <div class="depth2">
+                                <p><a href="#">프로그램 예약 내역</a></p>
+                                <p><a href="#">BMW 바우처</a></p>
+                                <p><a href="#">회원 정보 관리</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="btnGroup">
+                        <a href="#" class="button">로그아웃</a>
+                    </div>
+
+                    <a href="#" class="btnMenuClose">메뉴닫기</a>
+                </div> -->
+        <!-- //로그인 후 -->
+        <!-- //2023-03-21 -->
+      </div>
+      <div class="menu">
+        <a href="#"><i class="ico_menu">전체메뉴</i></a>
+        <div class="menuAllBox">
+          <div class="menuBox">
+            <div class="section">
+              <div>
+                <h2>BMW Driving Center</h2>
+                <a href="#">프로그램 운영 정보</a>
+                <a href="#">체험 차량 정보</a>
+                <a href="#">드라이빙 트랙 정보</a>
+              </div>
+              <div>
+                <h2>Driving 프로그램 예약</h2>
+                <a href="#">프로그램 별 예약</a>
+                <a href="#">차량 별 예약 </a>
+                <a href="#">일자 별 예약</a>
+              </div>
+              <div>
+                <h2>주니어 캠퍼스 예약</h2>
+                <a href="#">주니어 캠퍼스 실험실 예약</a>
+                <a href="#">주니어 캠퍼스 워크샵 예약</a>
+              </div>
+              <div>
+                <h2>Driving Center 대관 신청</h2>
+                <a href="#">대관 신청</a>
+              </div>
+              <div>
+                <h2>마이 페이지</h2>
+                <a href="#">프로그램 예약 내역</a>
+                <a href="#">프로그램 이수 내역</a>
+                <a href="#">Driving 배지 미션</a>
+                <a href="#">BMW 바우처</a>
+                <a href="#">회원 정보 관리</a>
+              </div>
+              <div>
+                <h2>이용정보</h2>
+                <a href="#">프로그램 이용 요금</a>
+                <a href="#">오시는 길</a>
+              </div>
+              <div>
+                <h2>고객 센터</h2>
+                <a href="#">FAQ</a>
+                <a href="#">NEWS</a>
+                <a href="#">EVENT</a>
+              </div>
+            </div>
+            <a href="#" class="btnMenuClose">메뉴닫기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function () {
+    if ($("#headerWrap").data("location")) {
+      include.init();
+      $(".locationBox").show();
+    } else {
+      $(".locationBox").remove();
+    }
+  });
+</script>
+<!-- //헤더영역 -->

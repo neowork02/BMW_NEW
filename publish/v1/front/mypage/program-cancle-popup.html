@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link href="../../../../static/assets/v1/css/ui.min.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header id="headerWrap" data-include="../../layout/header.html"></header>
+    <!-- //헤더영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section mb100">
+        <div class="titLineBox">
+          <h2 class="titH2 mb35">My Page</h2>
+        </div>
+
+        <!-- 마이페이지 상단 상태 영역 -->
+        <div class="mypageInfoBox" data-include="../mypage/mypage.html"></div>
+        <!-- //마이페이지 상단 상태 영역 -->
+
+        <div class="tabList depth col6 mt60" data-tab-tit>
+          <div class="tab">
+            <a href="#" class="on">예약 내역</a>
+            <div class="tabDepthList">
+              <a href="#" class="depth2 on">Driving 프로그램 예약 내역</a>
+              <a href="#" class="depth2">주니어 캠퍼스 예약 내역</a>
+            </div>
+          </div>
+          <div class="tab">
+            <a href="#">이수 내역</a>
+          </div>
+          <div class="tab">
+            <a href="#">Driving 배지 미션 </a>
+          </div>
+          <div class="tab">
+            <a href="#">BMW 바우처</a>
+          </div>
+          <div class="tab">
+            <a href="#">회원 정보 관리</a>
+            <div class="tabDepthList">
+              <a href="#" class="depth2">회원 정보 수정</a>
+              <a href="#" class="depth2">BMW DC 회원 탈퇴</a>
+              <a href="#" class="depth2">BMW DC 회원 통합</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex alignCenter mb10">
+          <h3 class="titH3 mb0">예약 정보</h3>
+          <div class="mla">
+            <a href="#" class="button small2 line2">영수증 확인</a>
+            <a href="#" class="button small2 line2">예약 내역서 확인</a>
+          </div>
+        </div>
+
+        <section class="mypageListWrap">
+          <div class="list">
+            <div class="imgBox">
+              <img
+                src="../../../../static/assets/v1/images/test/sample_img1.png"
+                alt=""
+              />
+            </div>
+            <div class="dlInfoBox col4">
+              <dl class="full">
+                <dt>주문번호</dt>
+                <dd class="flex alignCenter">
+                  <a href="#" class="underline"
+                    >2023010300000000<i class="icoArrow mtm4 ml5"
+                      >자세히 보기</i
+                    ></a
+                  >
+                  <a href="#cancelPop" class="button small2 line2 mla popOpen"
+                    >예약취소</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>예약 일자</dt>
+                <dd class="tl fc262626">2023.01.04(월)</dd>
+              </dl>
+              <dl>
+                <dt>예약 상태</dt>
+                <!-- 
+                  예약상태
+                  1. 예약완료 : fcGreen
+                  2. 예약취소 : fcRed
+                -->
+                <dd class="tl fcGreen">예약완료</dd>
+              </dl>
+              <dl>
+                <dt>체험 프로그램</dt>
+                <dd class="tl">Test Drive</dd>
+              </dl>
+              <dl>
+                <dt>체험 일시</dt>
+                <dd class="tl">2023.01.04(월) | 오전 9:40</dd>
+              </dl>
+              <dl>
+                <dt>체험 차량</dt>
+                <dd class="tl">BMW 32Oi M Sport Package</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <h3 class="titH3 mt60">이용자 정보</h3>
+
+        <h4 class="mt40 fz20 fwNormal">이용자 정보 1</h4>
+        <div class="dlInfoBox col4 mt10">
+          <dl class="full">
+            <dt>예매번호</dt>
+            <dd class="flex alignCenter">
+              2023010300000000
+              <!-- 상태에 따라 노출 되는 버튼 다름 -->
+              <a href="#" class="button small2 line2 mla">이수증 확인</a>
+              <!-- <a href="#" class="button small2 line2 mla">참여증 확인</a> -->
+            </dd>
+          </dl>
+          <dl>
+            <dt>이수 상태</dt>
+            <!-- 
+              이수상태
+              0. 평가대기
+              1. 이수완료 : fcGreen
+              2. 참여완료 : fcGreen
+            -->
+            <dd class="tl fcGreen">이수완료</dd>
+          </dl>
+          <dl>
+            <dt>체험 차량</dt>
+            <dd class="tl">BMW 32Oi M Sport Package</dd>
+          </dl>
+          <dl>
+            <dt>프로그램 이용료</dt>
+            <dd class="tl">80,000원</dd>
+          </dl>
+          <dl>
+            <dt>성명</dt>
+            <dd class="tl">Username</dd>
+          </dl>
+          <dl>
+            <dt>이메일</dt>
+            <dd class="tl">sysy@gsitm.com</dd>
+          </dl>
+          <dl>
+            <dt>휴대폰 번호</dt>
+            <dd class="tl">0000000000</dd>
+          </dl>
+          <dl>
+            <dt>생년 월일</dt>
+            <dd class="tl">yyyy.mm.dd</dd>
+          </dl>
+
+          <dl>
+            <dt>동승자</dt>
+            <dd class="tl">2명</dd>
+          </dl>
+        </div>
+
+        <h4 class="mt40 fz20 fwNormal">이용자 정보 2</h4>
+        <div class="dlInfoBox col4 mt10">
+          <dl class="full">
+            <dt>예매번호</dt>
+            <dd class="flex alignCenter">
+              2023010300000000
+              <!-- 상태에 따라 노출 되는 버튼 다름 -->
+              <!-- <a href="#" class="button small2 line2 mla">이수증 확인</a> -->
+              <a href="#" class="button small2 line2 mla">참여증 확인</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>이수 상태</dt>
+            <!-- 
+              이수상태
+              0. 평가대기
+              1. 이수완료 : fcGreen
+              2. 참여완료 : fcGreen
+            -->
+            <dd class="tl fcGreen">참여완료</dd>
+          </dl>
+          <dl>
+            <dt>체험 차량</dt>
+            <dd class="tl">BMW 32Oi M Sport Package</dd>
+          </dl>
+          <dl>
+            <dt>프로그램 이용료</dt>
+            <dd class="tl">80,000원</dd>
+          </dl>
+          <dl>
+            <dt>성명</dt>
+            <dd class="tl">Username</dd>
+          </dl>
+          <dl>
+            <dt>이메일</dt>
+            <dd class="tl">sysy@gsitm.com</dd>
+          </dl>
+          <dl>
+            <dt>휴대폰 번호</dt>
+            <dd class="tl">0000000000</dd>
+          </dl>
+          <dl>
+            <dt>생년 월일</dt>
+            <dd class="tl">yyyy.mm.dd</dd>
+          </dl>
+        </div>
+
+        <h4 class="mt40 fz20 fwNormal">이용자 정보 3</h4>
+        <div class="dlInfoBox col4 mt10">
+          <dl class="full">
+            <dt>예매번호</dt>
+            <dd class="tl">20230103000000001</dd>
+          </dl>
+          <dl>
+            <dt>이수 상태</dt>
+            <!-- 
+              이수상태
+              1. 이수완료 : fcGreen
+              2. 참여완료 : fcGreen
+            -->
+            <dd class="tl">평가대기</dd>
+          </dl>
+          <dl>
+            <dt>체험 차량</dt>
+            <dd class="tl">BMW 32Oi M Sport Package</dd>
+          </dl>
+          <dl>
+            <dt>프로그램 이용료</dt>
+            <dd class="tl">80,000원</dd>
+          </dl>
+          <dl>
+            <dt>성명</dt>
+            <dd class="tl">Username</dd>
+          </dl>
+          <dl>
+            <dt>이메일</dt>
+            <dd class="tl">sysy@gsitm.com</dd>
+          </dl>
+          <dl>
+            <dt>휴대폰 번호</dt>
+            <dd class="tl">0000000000</dd>
+          </dl>
+          <dl>
+            <dt>생년 월일</dt>
+            <dd class="tl">yyyy.mm.dd</dd>
+          </dl>
+        </div>
+
+        <h4 class="mt40 fz20 fwNormal">이용자 정보 4</h4>
+        <!-- 취소 완료시 dimCancel 클래스 적용-->
+        <div class="dlInfoBox col4 mt10 dimCancel">
+          <dl class="full">
+            <dt>예매번호</dt>
+            <dd class="tl">20230103000000001</dd>
+          </dl>
+          <dl>
+            <dt>이수 상태</dt>
+            <!-- 
+              이수상태
+              1. 이수완료 : fcGreen
+              2. 참여완료 : fcGreen
+            -->
+            <dd class="tl">평가대기</dd>
+          </dl>
+          <dl>
+            <dt>체험 차량</dt>
+            <dd class="tl">BMW 32Oi M Sport Package</dd>
+          </dl>
+          <dl>
+            <dt>프로그램 이용료</dt>
+            <dd class="tl">80,000원</dd>
+          </dl>
+          <dl>
+            <dt>성명</dt>
+            <dd class="tl">Username</dd>
+          </dl>
+          <dl>
+            <dt>이메일</dt>
+            <dd class="tl">sysy@gsitm.com</dd>
+          </dl>
+          <dl>
+            <dt>휴대폰 번호</dt>
+            <dd class="tl">0000000000</dd>
+          </dl>
+          <dl>
+            <dt>생년 월일</dt>
+            <dd class="tl">yyyy.mm.dd</dd>
+          </dl>
+        </div>
+
+        <h3 class="mt60 titH3">예약자 정보</h3>
+        <div class="dlInfoBox col4 mt10">
+          <dl>
+            <dt>성명</dt>
+            <dd class="tl">박수용</dd>
+          </dl>
+          <dl>
+            <dt>이메일</dt>
+            <dd class="tl">sysy@gsitm.com</dd>
+          </dl>
+          <dl>
+            <dt>휴대폰 번호</dt>
+            <dd class="tl">Test Drive</dd>
+          </dl>
+          <dl>
+            <dt>생년 월일</dt>
+            <dd class="tl">yyyy.mm.dd</dd>
+          </dl>
+        </div>
+
+        <h3 class="mt60 titH3">결제 정보</h3>
+        <div class="dlInfoBox type3">
+          <dl>
+            <dt>TestDrive BMW 32Oi M Sport Package (80,000원x2)</dt>
+            <dd>160,000원</dd>
+          </dl>
+          <dl>
+            <dt><strong>프로그램 이용료 합계</strong></dt>
+            <dd><strong class="fc262626">160,000원</strong></dd>
+          </dl>
+          <dl>
+            <dt>임직원 할인</dt>
+            <dd>-0원 (50%할인)</dd>
+          </dl>
+          <dl>
+            <dt>Vantage 등급 할인</dt>
+            <dd>-0원 (30%할인)</dd>
+          </dl>
+          <dl>
+            <dt>바우처 할인 금액</dt>
+            <dd>-0원</dd>
+          </dl>
+          <dl>
+            <dt>BMW Coin 할인 금액</dt>
+            <dd>-0원</dd>
+          </dl>
+          <dl>
+            <dt><strong>할인 합계</strong></dt>
+            <dd><strong class="fc262626">-0원</strong></dd>
+          </dl>
+        </div>
+
+        <div class="totalPaymentBox">
+          <dl>
+            <dt>총 결제 금액</dt>
+            <dd><strong>160,000원</strong></dd>
+          </dl>
+          <dl>
+            <dt>결제수단</dt>
+            <dd>신용카드(현대 1234-****-****-****)</dd>
+          </dl>
+          <dl>
+            <dt>결제완료일시</dt>
+            <dd>YYYY.MM.DD hh.mm</dd>
+          </dl>
+        </div>
+
+        <h3 class="mt60 titH3">취소 및 환불 정보</h3>
+        <div class="dlInfoBox">
+          <dl>
+            <dt>TestDrive BMW 32Oi M Sport Package (80,000원x2)</dt>
+            <dd>160,000원</dd>
+          </dl>
+          <dl>
+            <dt>취소 프로그램 이용료</dt>
+            <dd>160,000원</dd>
+          </dl>
+          <dl>
+            <dt>취소 수수료</dt>
+            <dd>-0원</dd>
+          </dl>
+          <dl>
+            <dt><strong>환불 예정 금액</strong></dt>
+            <dd><strong class="fc262626">40,000원</strong></dd>
+          </dl>
+          <dl>
+            <dt>환불 수단</dt>
+            <dd>신용카드(현대 1234-****-****-****)</dd>
+          </dl>
+          <dl>
+            <dt>취소 사유</dt>
+            <dd>단순 변심</dd>
+          </dl>
+          <dl>
+            <dt>취소 일시</dt>
+            <dd>YYYY.MM.DD hh.mm.ss</dd>
+          </dl>
+        </div>
+        <p class="mt10">
+          ※ 환불 처리는 영업일 기준으로 3~5일 정도 소요 됩니다.(은행, 카드사
+          마다 승인 취소 소요 일시가 다를 수 있습니다.)
+        </p>
+
+        <h3 class="mt60 titH3">취소/환불 규정 안내</h3>
+        <div class="tableList">
+          <table>
+            <colgroup>
+              <col />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">기간</th>
+                <th scope="col">취소 수수료율</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>탑승/이용일 당일 00:00전 까지</td>
+                <td>예약 금액의 0%</td>
+              </tr>
+              <tr>
+                <td>탑승/이용일 00:00 이후</td>
+                <td>예약 금액예약 금액의 100%</td>
+              </tr>
+              <tr>
+                <td>
+                  탑승/이용일 당일 및 <br />
+                  No-show 프로그램 시작 시간 이후
+                </td>
+                <td>취소 및 환불 불가</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <ul class="bulletList mt10">
+          <li>
+            악천후 및 천재지변으로 인해 프로그램이 갑작스레 취소될 수 있으며,
+            예약 비용은 환불 처리됩니다.
+          </li>
+          <li>
+            고객 귀책사유로 인한 취소 진행 시 탑승/이용일을 기준으로 아래와 같이
+            취소 수수료가 작동 적용 됩니다.
+          </li>
+        </ul>
+
+        <div class="btnGroup mt70">
+          <a href="#" class="button line mr4 w370">예약 목록으로 이동</a>
+          <a href="#" class="button ml4 w370">예약 취소</a>
+        </div>
+      </div>
+    </section>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="cancelPop" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 76rem">
+        <div class="layerHeader">
+          <h1>예약 취소</h1>
+        </div>
+        <div class="popCont">
+          <h2>취소 대상 예약 정보</h2>
+          <div class="dlInfoBox mt10">
+            <dl>
+              <dt>체험 프로그램</dt>
+              <dd>Test Drive</dd>
+            </dl>
+            <dl>
+              <dt>체험 차량</dt>
+              <dd>BMW 32Oi M Sport Package</dd>
+            </dl>
+            <dl>
+              <dt>체험 일시</dt>
+              <dd>2023.01.04(월) / 오전 9:40</dd>
+            </dl>
+            <dl>
+              <dt>체험 인원</dt>
+              <dd>2명</dd>
+            </dl>
+          </div>
+
+          <h2 class="mt35">취소 사유 선택</h2>
+          <div class="formBox mt10">
+            <div class="selectBox">
+              <select title="취소 사유">
+                <option value="">취소 사유를 선택해주세요.</option>
+                <option value="1">1일</option>
+                <option value="2">2일</option>
+                <option value="3">3일</option>
+              </select>
+            </div>
+          </div>
+
+          <h2 class="mt35">취소 및 환불 예상 정보</h2>
+          <div class="dlInfoBox mt10">
+            <dl>
+              <dt>프로그램 이용료 합계</dt>
+              <dd>160,000원</dd>
+            </dl>
+            <dl>
+              <dt>예상 취소 수수료</dt>
+              <dd>0원</dd>
+            </dl>
+            <dl>
+              <dt><strong>환불 예상 금액</strong></dt>
+              <dd><strong class="fc262626">160,000원</strong></dd>
+            </dl>
+          </div>
+
+          <div class="checkbox mt15">
+            <input type="checkbox" id="check1" /><label for="check1"
+              ><i></i>BMW Driving Center 취소 환불 규약에 동의합니다.</label
+            >
+          </div>
+        </div>
+        <div class="popBtnGroup">
+          <button class="button">예약 취소하기</button>
+        </div>
+
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <!-- //팝업 -->
+
+    <!-- 하단 영역 -->
+    <footer id="footerWrap" data-include="../../layout/footer.html"></footer>
+    <!-- //하단 영역 -->
+    <script></script>
+  </body>
+</html>

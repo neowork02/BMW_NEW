@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link href="../../../../static/assets/v1/css/ui.min.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header id="headerWrap" data-include="../../layout/header.html"></header>
+    <!-- //헤더영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section mb100">
+        <div class="titBox">
+          <h2 class="titH2">Driving Center 추가 정보 입력</h2>
+        </div>
+
+        <p class="mt35">
+          <strong>Driving Center 이용을 위해 추가 정보를 입력해 주세요</strong>
+        </p>
+
+        <div class="flex mt40 mb15">
+          <h3 class="titH3 mb0">회원 정보</h3>
+          <p class="impoText mla">
+            <span class="impo">*</span>항목은 필수 입력 항목입니다.
+          </p>
+        </div>
+
+        <div class="dlInfoBox mt10">
+          <dl>
+            <dt class="w250">
+              <label for="Name1" class="tit"
+                >성명<span class="impo">중요</span></label
+              >
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="inputBox disabled">
+                  <input type="text" id="Name1" disabled />
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w250">
+              <label for="email" class="tit"
+                >이메일<span class="impo">중요</span></label
+              >
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="inputBox disabled">
+                  <input type="text" id="email" disabled />
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w250">
+              <label for="phone1" class="tit"
+                >휴대폰 번호<span class="impo">중요</span></label
+              >
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="inputBox disabled">
+                  <input type="text" id="phone1" disabled />
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w250">
+              <label for="phone2" class="tit">전화번호</label>
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="inputBox"><input type="text" id="phone2" /></div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w250">
+              <label for="sex" class="tit"
+                >성별<span class="impo">중요</span></label
+              >
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="inputBox disabled">
+                  <input type="text" id="sex" disabled />
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w250">
+              <label for="birthday" class="tit"
+                >생년월일<span class="impo">중요</span></label
+              >
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="inputBox disabled">
+                  <input type="text" id="birthday" disabled />
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="flex mt60 mb15">
+          <h3 class="titH3 mb0">주소 정보</h3>
+          <p class="impoText mla">
+            <span class="impo">*</span>항목은 필수 입력 항목입니다.
+          </p>
+        </div>
+
+        <div class="dlInfoBox mt10">
+          <dl>
+            <dt class="w155">
+              <label for="address" class="tit"
+                >주소<span class="impo">중요</span></label
+              >
+            </dt>
+            <dd class="flex11">
+              <div class="formBox sizeType">
+                <div class="flex">
+                  <div class="inputBox">
+                    <input type="text" id="address" placeholder="우편번호" />
+                  </div>
+                  <a href="#" class="button w100 ml5 black">주소찾기</a>
+                </div>
+              </div>
+              <div class="formBox sizeType mt19">
+                <div class="inputBox">
+                  <input type="text" placeholder="주소" />
+                </div>
+              </div>
+              <div class="formBox sizeType mt19">
+                <div class="inputBox">
+                  <input type="text" placeholder="상세주소" />
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- -------------------
+          추가 회원 정보 입력 
+        ------------------- -->
+        <div class="flex mt60 mb15">
+          <h3 class="titH3 mb0">직업 정보</h3>
+        </div>
+        <div class="dlInfoBox mt10">
+          <dl>
+            <dt class="w155">직업 군</dt>
+            <dd class="flex11">
+              <div class="selectBox sizeType tl wa">
+                <select title="날짜 선택">
+                  <option value="">날짜 선택</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="flex mt60 mb15">
+          <h3 class="titH3 mb0">보유 차량 정보</h3>
+        </div>
+        <div class="dlInfoBox mt10">
+          <dl>
+            <dt class="w155">브랜드</dt>
+            <dd class="flex11">
+              <div class="selectBox sizeType tl wa">
+                <select title="브랜드 선택">
+                  <option value="">브랜드를 선택해 주세요..</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w155">차종</dt>
+            <dd class="flex11">
+              <div class="selectBox sizeType tl wa">
+                <select title="차종 선택">
+                  <option value="">차종을 선택해 주세요.</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="formBox mt15">
+          <div class="checkbox">
+            <input type="checkbox" id="check1" /><label for="check1"
+              ><i></i>보유 차량 없음</label
+            >
+          </div>
+        </div>
+
+        <div class="flex mt60 mb15">
+          <h3 class="titH3 mb0">BMW 관심 차량</h3>
+        </div>
+        <div class="dlInfoBox mt10">
+          <dl>
+            <dt class="w155">브랜드</dt>
+            <dd class="flex11">
+              <div class="selectBox sizeType tl wa">
+                <select title="브랜드를 선택">
+                  <option value="">브랜드를 선택해 주세요..</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="w155">시리즈</dt>
+            <dd class="flex11">
+              <div class="selectBox sizeType tl wa">
+                <select title="시리즈 선택">
+                  <option value="">시리즈를 선택해 주세요.</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <!-- 2023-03-30 -->
+          <dl>
+            <dt class="w155">모델</dt>
+            <dd class="flex11">
+              <div class="selectBox sizeType tl wa">
+                <select title="모델 선택">
+                  <option value="">모델을 선택해 주세요.</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <!-- //2023-03-30 -->
+        </div>
+        <!-- -------------------
+          //추가 회원 정보 입력 
+        ------------------- -->
+
+        <div class="flex mt60 mb15">
+          <h3 class="titH3 mb0">마케팅 정보 수신 설정</h3>
+        </div>
+        <div class="lineBox2">
+          <div class="checkbox">
+            <input type="checkbox" id="marketing1" checked /><label
+              for="marketing1"
+              ><i></i>E-mail</label
+            >
+          </div>
+          <div class="checkbox mt0 ml20">
+            <input type="checkbox" id="marketing2" /><label for="marketing2"
+              ><i></i>SMS</label
+            >
+          </div>
+          <div class="checkbox mt0 ml20">
+            <input type="checkbox" id="marketing3" /><label for="marketing3"
+              ><i></i>DM</label
+            >
+          </div>
+        </div>
+
+        <div class="btnGroup mt70">
+          <a href="#" class="button line">이전</a>
+          <a href="#" class="button">다음</a>
+        </div>
+      </div>
+    </section>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 하단 영역 -->
+    <!-- 2023-03-29 푸터 변경 -->
+    <footer
+      id="footerWrap"
+      class="ptb30"
+      data-include="../../layout/footer_login.html"
+    ></footer>
+    <!-- //하단 영역 -->
+
+    <script></script>
+  </body>
+</html>

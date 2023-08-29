@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link href="../../../../static/assets/v1/css/ui.min.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header id="headerWrap" data-include="../../layout/header.html"></header>
+    <!-- //헤더영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section mb100">
+        <div class="titLineBox">
+          <h2 class="titH2">BMW Driving Center 대관 신청</h2>
+          <p class="mb25 mt10">
+            브랜드 체험 센터에 위치한 이벤트 홀은 모임이나 행사를 가지기에
+            최적화된 환경을 제공합니다. <br />
+            조용하고 넓은 실내는 행사의 내용이나 콘셉트에 따라 공간의 구성과
+            연출에 다양한 변화를 줄 수 있습니다.
+          </p>
+        </div>
+
+        <div class="divisionBox">
+          <div class="wp60">
+            <h4 class="titH3">대관 문의 내용</h4>
+            <div class="dlInfoBox">
+              <dl>
+                <dt class="w250">대관 신청 희망일</dt>
+                <dd class="flex11">
+                  <div class="formBox sizeType">
+                    <div class="inputBox datepicker">
+                      <input type="text" placeholder="시작일" /><i></i>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt class="w250">대관 신청 시간</dt>
+                <dd class="flex11">
+                  <div class="formBox sizeType">
+                    <div class="toggleRadio">
+                      <input type="radio" id="radio1_1" name="radioG1" />
+                      <label for="radio1_1"><i></i>오전(AM)</label>
+                      <input type="radio" id="radio1_2" name="radioG1" />
+                      <label for="radio1_2"><i></i>오후(FM)</label>
+                      <input
+                        type="radio"
+                        id="radio1_3"
+                        name="radioG1"
+                        checked
+                      />
+                      <label for="radio1_3"><i></i>종일(Full day)</label>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt class="w250">대관 인원</dt>
+                <dd class="flex11">
+                  <div class="formBox sizeType">
+                    <div class="inputBox"><input type="text" /></div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt class="w250">서비스 선택</dt>
+                <dd class="flex11">
+                  <div class="formBox sizeType tl pt3 pb3">
+                    <div class="checkBoxFlex">
+                      <div class="checkbox">
+                        <input type="checkbox" id="serviceCheck1" /><label
+                          for="serviceCheck1"
+                          class="fc262626"
+                          ><i></i>온로드 트랙 체험</label
+                        >
+                        <div class="tooltipWrap">
+                          <a href="#none" class="tooltip type2" role="button"
+                            >자세한 내용 확인</a
+                          >
+                          <div class="tooltipPop w450">
+                            온로드 트랙은 드라이빙 센터의 써킷을 활용하여
+                            진행되는 프로그램 입니다.
+                            <a href="#" class="btnClose">닫기</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="serviceCheck2" /><label
+                          for="serviceCheck2"
+                          class="fc262626"
+                          ><i></i>오프로드 트랙 체험</label
+                        >
+                        <div class="tooltipWrap">
+                          <a href="#none" class="tooltip type2" role="button"
+                            >자세한 내용 확인</a
+                          >
+                          <div class="tooltipPop w450">
+                            온로드 트랙은 드라이빙 센터의 써킷을 활용하여
+                            진행되는 프로그램 입니다.
+                            <a href="#" class="btnClose">닫기</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="serviceCheck3" /><label
+                          for="serviceCheck3"
+                          class="fc262626"
+                          ><i></i>컨퍼런스 룸
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="serviceCheck4" /><label
+                          for="serviceCheck4"
+                          class="fc262626"
+                          ><i></i>조이 스퀘어(컨벤션 홀, 35명을 초과하는 경우
+                          적합)</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt class="w250">이벤트 목적 선택</dt>
+                <dd class="flex11">
+                  <div class="formBox sizeType tl pt3 pb3">
+                    <div class="checkBoxFlex">
+                      <div class="checkbox">
+                        <input type="checkbox" id="eventCheck1" /><label
+                          for="eventCheck1"
+                          class="fc262626"
+                          ><i></i>드라마, 영화, 광고촬영</label
+                        >
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="eventCheck2" /><label
+                          for="eventCheck2"
+                          class="fc262626"
+                          ><i></i>기업 워크샵</label
+                        >
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="eventCheck3" /><label
+                          for="eventCheck3"
+                          class="fc262626"
+                          ><i></i>동호회 및 소규모 모임</label
+                        >
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="eventCheck4" /><label
+                          for="eventCheck4"
+                          class="fc262626"
+                          ><i></i>B2B, B2C 행사 진행</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <h4 class="titH3 mt60">대관 신청자 정보</h4>
+            <div class="dlInfoBox">
+              <dl>
+                <dt class="w250">단체명</dt>
+                <dd class="flex11 tl">
+                  <div class="formBox sizeType">
+                    <div class="inputBox"><input type="text" /></div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt class="w250">담당자 성명</dt>
+                <dd class="flex11 tl">
+                  <div class="formBox sizeType">
+                    <div class="inputBox"><input type="text" /></div>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt class="w250">이메일</dt>
+                <dd class="flex11 tl">
+                  <div class="formBox sizeType">
+                    <div class="flex alignCenter">
+                      <div class="inputBox"><input type="text" /></div>
+                      <span class="ml10">@</span>
+                      <div class="inputBox ml10"><input type="text" /></div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="wp40">
+            <h4 class="titH3">개인정보 수집 약관 동의</h4>
+            <div class="agreeContBox h445">약관내용</div>
+
+            <div class="checkbox mt14">
+              <input type="checkbox" id="agreeCheck1" /><label for="agreeCheck1"
+                ><i></i>BMW DC 개인정보 수집에 동의합니다.</label
+              >
+            </div>
+
+            <div class="btnGroup full mt70">
+              <a href="#" class="button">대관 신청 하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 하단 영역 -->
+    <footer id="footerWrap" data-include="../../layout/footer.html"></footer>
+    <!-- //하단 영역 -->
+    <script></script>
+  </body>
+</html>

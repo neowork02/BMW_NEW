@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link
+      href="../../../../../static/assets/v1/css/ui.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header id="headerWrap" data-include="../../../layout/header.html"></header>
+    <!-- //헤더영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <section
+      id="container"
+      data-title="드라이빙 프로그램 예약내역 확인 및 결제"
+    >
+      <div class="section">
+        <h2 class="titH2">예약 확인 및 결제</h2>
+        <div class="reservationWrap">
+          <div class="left">
+            <h3 class="titH3">예약자 정보</h3>
+            <div class="dlInfoBox">
+              <dl>
+                <dt>성명</dt>
+                <dd class="pl20 tl">박수용</dd>
+              </dl>
+              <dl>
+                <dt>이메일</dt>
+                <dd class="pl20 tl">sysy@gsitm.com</dd>
+              </dl>
+              <dl>
+                <dt>휴대폰 번호</dt>
+                <dd class="pl20 tl">010-3172-0000</dd>
+              </dl>
+              <dl>
+                <dt>생년월일</dt>
+                <dd class="pl20 tl">YYYY.MM.DD</dd>
+              </dl>
+            </div>
+
+            <!-- 2023-03-20 -->
+            <div class="flex mt60 mb20">
+              <h3 class="titH3 mb0">
+                이용자 정보
+                <div class="tooltipWrap mtm4">
+                  <a href="#none" class="tooltip" role="button" data-width="230"
+                    >자세한 내용 확인</a
+                  >
+                  <div class="tooltipPop">
+                    <strong>이용자 정보를 정확하게 기입해 주세요.</strong>
+                  </div>
+                </div>
+              </h3>
+              <p class="impoText mla">
+                <span class="impo">*</span>항목은 필수 입력 항목입니다.
+              </p>
+            </div>
+            <!-- //2023-03-20 -->
+
+            <div class="dlInfoBox mt10">
+              <dl class="full">
+                <dt class="flex alignCenter">
+                  <p>이용자 정보 1</p>
+                  <!-- 2023-03-06 -->
+                  <p class="mla fz15">
+                    ※ 이용자 1은 반드시 예약자와 동일인이여야 합니다.
+                  </p>
+                </dt>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Name1" class="tit"
+                      >성명<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox"><input type="text" id="Name1" /></div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Birthday1" class="tit"
+                      >생년월일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Birthday1" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Phone1" class="tit"
+                      >휴대폰 번호<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Phone1" />
+                    </div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Email1" class="tit"
+                      >이메일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Email1" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex alignCenter ptb8">
+                  <div class="checkbox">
+                    <input type="checkbox" id="check1_1" /><label
+                      for="check1_1"
+                      class="fz15 fc262626"
+                      ><i></i>동승자 탑승 여부</label
+                    >
+                  </div>
+
+                  <div class="personCount mt0 mla">
+                    <button class="btnMinus">더하기</button>
+                    <p class="count fz20 fwNormal">0</p>
+                    <button class="btnPlus">빼기</button>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="dlInfoBox mt60">
+              <dl class="full">
+                <dt>이용자 정보 2</dt>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Name2" class="tit"
+                      >성명<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox"><input type="text" id="Name2" /></div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Birthday2" class="tit"
+                      >생년월일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Birthday2" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Phone3" class="tit"
+                      >휴대폰 번호<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Phone3" />
+                    </div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Email4" class="tit"
+                      >이메일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Email4" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex alignCenter ptb8">
+                  <div class="checkbox">
+                    <input type="checkbox" id="check1_2" /><label
+                      for="check1_2"
+                      class="fz15 fc262626"
+                      ><i></i>동승자 탑승 여부</label
+                    >
+                  </div>
+
+                  <div class="personCount mt0 mla">
+                    <button class="btnMinus">더하기</button>
+                    <p class="count fz20 fwNormal">0</p>
+                    <button class="btnPlus">빼기</button>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <h3 class="titH3 mt60 mb10">탑승 유의 사항 확인 및 동의</h3>
+            <div class="agreePopCheckBox">
+              <!-- 활성화 : on 클래스-->
+              <a href="#pop1" class="popOpen on">
+                <span class="agree">동의</span>
+                탑승 준비 사항을 확인 및 숙지 하였습니다.
+                <span class="more"></span>
+              </a>
+              <a href="#pop1" class="popOpen">
+                <span class="agree">동의</span>
+                탑승 제한 사항을 확인 하였습니다.
+                <span class="more"></span>
+              </a>
+              <a href="#pop1" class="popOpen">
+                <span class="agree">동의</span>
+                프로그램 유의사항을 확인하였습니다.
+                <span class="more"></span>
+              </a>
+            </div>
+
+            <h3 class="titH3 mt60">결제</h3>
+            <p class="mt35 bold">할인수단</p>
+
+            <div class="tabList type2 mt20" data-tab-tit>
+              <a href="#tabCont1-1" class="wp30">임직원 할인</a>
+              <a href="#tabCont1-2" class="wp30 on">바우처 할인</a>
+              <a href="#tabCont1-3" class="wp40"
+                >Vantage등급 할인 및 BMW Coin 할인
+              </a>
+            </div>
+
+            <!-- 2023-03-06 -->
+            <div class="tabContWrap mt20" data-tab-cont>
+              <div id="tabCont1-1" class="tabCont" style="display: block">
+                <div class="grayBox">
+                  <p class="dotText">임직원 할인 (50%)</p>
+                  <div class="mla flex alignCenter formBox">
+                    <div class="inputBox w200 right">
+                      <input
+                        type="text"
+                        disabled="disabled"
+                        value="-90,000원"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tabCont1-2" class="tabCont">
+                <div class="grayBox">
+                  <p class="dotText">바우처 할인 금액</p>
+                  <div class="mla flex alignCenter formBox">
+                    <div class="inputBox w200 right">
+                      <input
+                        type="text"
+                        class="inpNumber"
+                        data-minus="true"
+                      /><span class="util">원</span>
+                    </div>
+                    <a href="#voucher" class="button black fwNormal popOpen"
+                      >등록/적용</a
+                    >
+                    <a href="#" class="button line fwNormal ml5">사용취소</a>
+                  </div>
+                </div>
+              </div>
+              <div id="tabCont1-3" class="tabCont">
+                <div class="grayBox block">
+                  <div class="flex">
+                    <p class="dotText mt10">
+                      Vantage등급 할인 (블랙 등급 30% 할인)
+                    </p>
+                    <div class="mla">
+                      <div class="formBox">
+                        <div class="inputBox w200 right disabled">
+                          <input
+                            type="text"
+                            class="inpNumber"
+                            id="vantage"
+                          /><span class="util">원</span>
+                        </div>
+                        <div class="errorText">
+                          (Vantage 등급이 존재하지 않습니다.)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 오류 예시 -->
+                  <script>
+                    $(function () {
+                      //FormMassege.error('#vantage', '(Vantage 등급이 존재하지 않습니다.)');
+                    });
+                  </script>
+                  <!-- //오류 예시 -->
+                  <div class="flex mt15">
+                    <p class="dotText mt10">
+                      BMW Coin 사용 (보유 Coin 100,000원)
+                    </p>
+                    <div class="mla">
+                      <div class="flex alignCenter formBox">
+                        <div class="inputBox w200 right">
+                          <input type="text" class="inpNumber" /><span
+                            class="util"
+                            >원</span
+                          >
+                        </div>
+                        <div class="ml10">
+                          <a href="#" class="button black fwNormal">전액사용</a>
+                        </div>
+                      </div>
+                      <p class="mt5 fz12">
+                        ※ BMW Coin은 결제금액의 50%까지만 사용 가능합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //2023-03-06 -->
+
+            <p class="mb15 mt35 bold">결제 수단</p>
+            <div class="cashChoice">
+              <button class="on">
+                <i class="icoCash1"></i>
+                <p>신용카드(국내 발급)</p>
+              </button>
+              <button>
+                <i class="icoCash1"></i>
+                <p>신용카드(해외 발급)</p>
+              </button>
+              <button>
+                <i class="icoCash2"></i>
+                <p>네이버 페이</p>
+              </button>
+              <button>
+                <i class="icoCash3"></i>
+                <p>카카오 페이</p>
+              </button>
+              <button>
+                <i class="icoCash4"></i>
+                <p>토스 페이</p>
+              </button>
+            </div>
+
+            <h3 class="titH3 mt60">결제 유의사항</h3>
+            <ul class="bulletList">
+              <li>
+                해외 발급 신용카드로 결제 시 환율 영향으로 인해 별도 수수료가
+                발생 될 수 있습니다.
+              </li>
+              <li>
+                BMW 드라이빙 센터는 고객 예약시 발생된 별도 수수료를 책임 지지
+                않습니다
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="rightBox">
+              <div class="titHead">
+                <h3 class="titH3">예약자 정보</h3>
+                <!-- 2023-03-02 -->
+                <a href="#" class="button small2 black mla">변경하기</a>
+              </div>
+              <div class="dlInfoBox mt11">
+                <dl>
+                  <dt>체험 프로그램</dt>
+                  <dd>TestDrive</dd>
+                </dl>
+                <dl>
+                  <dt>체험 차량</dt>
+                  <dd>BMW 32Oi M Sport Package</dd>
+                </dl>
+                <dl>
+                  <dt>체험 일자</dt>
+                  <dd>2023년 1월 27일(일)</dd>
+                </dl>
+                <dl>
+                  <dt>체험 시간</dt>
+                  <dd>오전 9:40</dd>
+                </dl>
+                <dl>
+                  <dt>체험 인원</dt>
+                  <dd>2명</dd>
+                </dl>
+              </div>
+
+              <h3 class="titH3 mt60">결제 금액</h3>
+              <div class="dlInfoBox mt15">
+                <dl>
+                  <dt>
+                    TestDrive <br />
+                    BMW 32Oi M Sport Package (80,000원x2)
+                  </dt>
+                  <dd>160,000원</dd>
+                </dl>
+                <dl>
+                  <dt><strong>프로그램 이용료 합계</strong></dt>
+                  <dd><strong class="fc262626">160,000원</strong></dd>
+                </dl>
+                <dl>
+                  <dt>임직원 할인</dt>
+                  <dd>-0원</dd>
+                </dl>
+                <dl>
+                  <dt>Vantage 등급 할인</dt>
+                  <dd>-0원</dd>
+                </dl>
+                <dl>
+                  <dt>바우처 할인 금액</dt>
+                  <dd>-0원</dd>
+                </dl>
+                <dl>
+                  <dt>BMW Coin 할인 금액</dt>
+                  <dd>-0원</dd>
+                </dl>
+                <dl>
+                  <dt><strong>할인합계</strong></dt>
+                  <dd><strong class="fc262626">-0원</strong></dd>
+                </dl>
+                <dl>
+                  <dt><strong>결제 예정 금액</strong></dt>
+                  <dd><strong class="fcPoint">160,000원</strong></dd>
+                </dl>
+              </div>
+
+              <!-- 2023-03-06 -->
+              <div class="formBox mt10">
+                <div class="flex alignCenter">
+                  <div class="checkbox">
+                    <input type="checkbox" id="check2" /><label for="check2"
+                      ><i></i>제 3자 정보제공 내용에 동의 합니다. (필수)</label
+                    >
+                  </div>
+                  <a href="#" class="mla fz13"
+                    >자세히 보기<i class="icoArrow ml5"></i
+                  ></a>
+                </div>
+
+                <div class="flex alignCenter mt10">
+                  <div class="checkbox">
+                    <input type="checkbox" id="check3" checked /><label
+                      for="check3"
+                      ><i></i>취소 및 환불 규정에 동의합니다. (필수)</label
+                    >
+                  </div>
+                  <a href="#" class="mla fz13"
+                    >자세히 보기<i class="icoArrow ml5"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="btnGroup mt70">
+                <a href="#" class="button wp100">160,000원 결제하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="pop1" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 62rem">
+        <div class="layerHeader">
+          <h1>탑승 유의 사항 약관 동의</h1>
+        </div>
+        <div class="popCont">
+          <div class="iTextBox">
+            <i class="icoAgree1_1"></i>
+            <h2>본인 명의 운전 면허증 소지</h2>
+            <p>※ 실제 주행 프로그램에 참가자에 한합니다.</p>
+            <p>※ 외국 국적 참가자는 아래의 서류를 모두 지참 하셔야 합니다.</p>
+            <p>
+              지참 서류 : 유효한 국제 운전면허증(Permit 1년), 자국 운전면허증,
+              여권
+            </p>
+          </div>
+
+          <div class="iTextBox mt45">
+            <i class="icoAgree1_2"></i>
+            <h2>편안한 신발 착용</h2>
+            <p>※ 편한 운동화나 굽이 낮은 단화 착용을 적극 권장합니다.</p>
+            <p>
+              ※ 하이힐 등 굽이 높은 신발을 착용하는 경우 탑승이 제한 됩니다.
+            </p>
+            <p class="fce30000">
+              고객 과실로 인한 탑승 제한 시 환불은 불가합니다.
+            </p>
+          </div>
+
+          <div class="iTextBox mt45">
+            <i class="icoAgree1_3"></i>
+            <h2>프로그램 시작 20분전 체크인 완료</h2>
+            <p>※ 프로그램 시작 20분전 체크인을 완료하셔야 합니다.</p>
+            <p>※ 지각으로 인해 체크인 미완료 시 탑승이 제한 됩니다.</p>
+            <p class="fce30000">
+              고객 과실로 인한 탑승 제한 시 환불은 불가합니다.
+            </p>
+          </div>
+
+          <div class="agreeLine">
+            <div class="checkbox">
+              <input type="checkbox" id="agreePop1" /><label for="agreePop1"
+                ><i></i>탑승 준비 사항을 확인하였으며, 이에 동의합니다.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="popBtnGroup">
+          <button class="button">동의하기</button>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+
+    <!-- 바우처 등록 -->
+    <div id="voucher" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 65rem">
+        <div class="layerHeader">
+          <h1>바우처 적용</h1>
+        </div>
+        <div class="popCont">
+          <h2>바우처 등록</h2>
+          <div class="formBox flex mt15">
+            <div class="inputBox">
+              <input type="text" placeholder="바우처 번호를 입력해주세요." />
+            </div>
+            <a href="#" class="button flex00 black fwNormal">조회하기</a>
+          </div>
+          <div class="grayBox mt20 block type2">
+            <p class="">
+              ※ 바우처 번호를 보유하신 경우 아래의 바우처 등록하기 버튼을 통해
+              등록을 진행해 주세요.
+            </p>
+            <p class="">
+              ※ 등록이 완료되더라도 사용조건에 맞지 않는 바우처는 노출되지
+              않습니다.
+            </p>
+            <p class="">
+              ※ 바우처 상세 사용 조건은 My page &gt; 나의 바우처에서 확인
+              가능합니다.
+            </p>
+          </div>
+
+          <!-- 바우처 리스트 -->
+          <div>
+            <h2 class="mt45">Test Drive</h2>
+            <div class="voucherBox">
+              <div class="left">
+                <p class="tit">BMW 32Oi M Sport Package</p>
+                <p class="text">2023년 1월 27일(일) / 오전 9:40</p>
+              </div>
+              <div class="right">
+                <div class="radio">
+                  <input type="radio" id="radio1_1" name="radioG1" /><label
+                    for="radio1_1"
+                    class="mr0"
+                    ><i></i>적용 안함</label
+                  >
+                </div>
+                <div class="radio mt10">
+                  <input
+                    type="radio"
+                    id="radio1_2"
+                    name="radioG1"
+                    checked
+                  /><label for="radio1_2" class="mr0"
+                    ><i></i>바우처 적용(적용 가능한 바우처 없음)</label
+                  >
+                </div>
+                <div class="selectContBox mt10">
+                  <a href="#">바우처를 선택해 주세요</a>
+                  <div class="view">
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">10% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">20% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">30% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">40% 할인</span></p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //바우처 리스트 -->
+
+          <!-- 바우처 리스트 -->
+          <div>
+            <h2 class="mt45">Test Drive</h2>
+            <div class="voucherBox">
+              <div class="left">
+                <p class="tit">BMW 32Oi M Sport Package</p>
+                <p class="text">2023년 1월 27일(일) / 오전 9:40</p>
+              </div>
+              <div class="right">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="radio2_1"
+                    name="radioG2"
+                    checked
+                  /><label for="radio2_1" class="mr0"><i></i>적용 안함</label>
+                </div>
+                <div class="radio mt10">
+                  <input type="radio" id="radio2_2" name="radioG2" /><label
+                    for="radio2_2"
+                    class="mr0"
+                    ><i></i>바우처 적용(적용 가능한 바우처 없음)</label
+                  >
+                </div>
+                <!-- <div class="selectContBox mt10">
+                  <a href="#">바우처를 선택해 주세요</a>
+                  <div class="view">
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">10% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">20% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">30% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                    <a href="#">
+                      <p class="fc262626">Test Drive</p>
+                      <p>할인 바우처 | <span class="fcPoint">40% 할인</span> </p>
+                      <p>사용 기한 | 2023.02.28 ~ 2023.03.31</p>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- //바우처 리스트 -->
+        </div>
+        <div class="popBtnGroup">
+          <button class="button bold">바우처 적용하기</button>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $(document).on("click", ".selectContBox .view a", function () {
+          console.log("개발소스 넣으면 됨");
+        });
+      });
+    </script>
+    <!-- //팝업 -->
+
+    <!-- 하단 영역 -->
+    <footer id="footerWrap" data-include="../../../layout/footer.html"></footer>
+    <!-- //하단 영역 -->
+
+    <script>
+      $(function () {
+        //에러 테스트
+        // FormMassege.error('#Name1', '에러메시지');
+        // FormMassege.error('#Birthday1', '에러메시지22');
+
+        $(document).on("click", ".cashChoice button", function () {
+          $(this).addClass("on").siblings().removeClass("on");
+          return false;
+        });
+
+        reservationBar();
+      });
+
+      const reservationBar = function () {
+        scrollMotion();
+        setTimeout(scrollMotion, 100);
+        $(window).scroll(function () {
+          scrollMotion();
+        });
+        $(window).on("resize", function () {
+          scrollMotion();
+        });
+
+        function scrollMotion() {
+          const target = ".reservationWrap";
+          const winH = $(window).outerHeight();
+          const scrollT = $(window).scrollTop();
+          const barT = $(target).offset().top;
+          const barH = $(target).find(">.right .rightBox").outerHeight();
+
+          const footerH = $("#footerWrap").outerHeight();
+          const footerT = $("#footerWrap").offset().top;
+
+          $(target).find(">.right").css("min-height", barH);
+
+          if (scrollT + winH - barT >= barH - 70) {
+            if (scrollT + winH >= footerT - 70) {
+              $(target)
+                .find(">.right .rightBox")
+                .removeAttr("style")
+                .removeClass("lock")
+                .addClass("bottom");
+            } else {
+              $(target)
+                .find(">.right .rightBox")
+                .addClass("lock")
+                .removeClass("bottom");
+            }
+          } else {
+            $(target)
+              .find(">.right .rightBox")
+              .removeAttr("style")
+              .removeClass("bottom lock");
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

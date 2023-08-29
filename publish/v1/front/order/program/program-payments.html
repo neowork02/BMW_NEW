@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link
+      href="../../../../../static/assets/v1/css/ui.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section">
+        <a href="#coursePop" class="button popOpen">코스별 자세히 보기</a>
+      </div>
+    </section>
+    <script>
+      $(function () {
+        layerPopup.open("#coursePop");
+      });
+    </script>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="coursePop" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont popSwiperWrap" tabindex="0" style="width: 62rem">
+        <div class="popCont">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="imgBox courseImg">
+                <img
+                  src="../../../../../static/assets/v1/images/sample/img_sample_course1.png"
+                  alt=""
+                />
+              </div>
+              <div class="textBox">
+                <p class="tit">
+                  폭 11m 총면적 1,440m 크기의 트랙으로 차량의 가속력 및 엔진
+                  파워를 느껴 볼 수 있습니다.
+                </p>
+                <p class="tit mt20">1. 가속 및 제동</p>
+                <p class="text">
+                  직선 주행로에서 최대 200km까지 가속할 수 있는 이며,
+                  굴곡로에서는 차량의 현기장치 엔진 파워를 느껴볼 수 있습니다.
+                </p>
+                <p class="tit mt20">2. 핸들링</p>
+                <p class="text">
+                  차량의 기본 조작 방법을 익히고 스티어링 적용, 제동과 엔진 파워
+                  체험 등을 통해 드라이빙 적응도를 높이는 입니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="arrowGroup">
+            <a href="#" class="swiper-button-prev">이전</a>
+            <a href="#" class="swiper-button-next">다음</a>
+          </div>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <!-- //팝업 -->
+
+    <script>
+      $(function () {
+        programPopSwiper();
+      });
+      const programPopSwiper = function () {
+        const swiper = new Swiper(".popSwiperWrap .popCont", {
+          spaceBetween: 50,
+          navigation: {
+            nextEl: ".popSwiperWrap .swiper-button-next",
+            prevEl: ".popSwiperWrap .swiper-button-prev",
+          },
+        });
+      };
+    </script>
+  </body>
+</html>

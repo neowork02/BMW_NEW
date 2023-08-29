@@ -1,0 +1,28 @@
+<!-- 헤더영역 -->
+<a href="#">프로그램 별 예약<i class="icoLocationArrow ml10"></i></a>
+<div class="view">
+  <p class="tit">Driving 프로그램 예약</p>
+  <a href="#">프로그램 별 예약</a>
+  <a href="#">차량 별 예약</a>
+  <a href="#">체험 일자 별 예약 </a>
+
+  <p class="tit">주니어 캠퍼스 예약</p>
+  <a href="#">주니어 캠퍼스 실험실</a>
+  <a href="#">주니어 캠퍼스 워크샵</a>
+</div>
+<script>
+  $(function () {
+    const locationHeader = function () {
+      const target = "#headerWrap .locationBox";
+      let idx = $("#headerWrap").data("location") - 1;
+      const text =
+        $(target).find(".view a").eq(idx).text() +
+        '<i class="icoLocationArrow ml10"></i>';
+
+      $(target).find(">a").html(text);
+      $(target).find(".view a").eq(idx).addClass("on");
+    };
+    locationHeader();
+  });
+</script>
+<!-- //헤더영역 -->

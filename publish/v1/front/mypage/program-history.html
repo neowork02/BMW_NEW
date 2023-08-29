@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link href="../../../../static/assets/v1/css/ui.min.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section">
+        <a href="#level2Pop" class="button popOpen">LV.2 달성 조건 안내</a>
+      </div>
+    </section>
+    <script>
+      $(function () {
+        layerPopup.open("#level2Pop");
+      });
+    </script>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="level2Pop" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 76rem">
+        <div class="layerHeader">
+          <h1>LV.2 달성 조건 안내</h1>
+        </div>
+        <div class="popCont">
+          <p>
+            BMW Driving Center LV.2 레벨업을 위해서는 아래의 프로그램 중 한 개
+            이상을 예약 및 이수 완료 하셔야 합니다.
+          </p>
+          <p>
+            드라이빙 프로그램 조작 미숙으로 인한 참여 처리시에는 레벨업이
+            진행되지 않습니다.
+          </p>
+          <div class="tableList mt20">
+            <table>
+              <colgroup>
+                <col style="width: 20rem" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">프로그램 명</th>
+                  <th scope="col">프로그램 설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Intensive</td>
+                  <td class="tl">
+                    다양한 노면에서의 긴급 제동과 회피, 언더스티어와 오버스티어
+                    제어, 짐카나를 통한 종합적인 차량 컨트롤 교육으로 구성되어
+                    있습니다.<br />
+                    <a href="#"
+                      ><strong>프로그램 자세히 보기</strong>
+                      <i class="icoArrow"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>M/JCW Intensive</td>
+                  <td class="tl">
+                    고성능 차량(BMW M, MINI JCW)을 주행하며, 드라이빙 스킬을
+                    업그레이드하는 프로그램입니다.<br />
+                    <a href="#"
+                      ><strong>프로그램 자세히 보기</strong>
+                      <i class="icoArrow"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>M Core</td>
+                  <td class="tl">
+                    BMW M 고객분들이 가장 선호하는 써큘러 에서의 드리프팅 및
+                    트랙 주행에 중점을 둔 프로그램입니다.<br />
+                    <a href="#"
+                      ><strong>프로그램 자세히 보기</strong>
+                      <i class="icoArrow"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <!-- //팝업 -->
+
+    <script></script>
+  </body>
+</html>

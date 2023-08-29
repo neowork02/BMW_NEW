@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link
+      href="../../../../../static/assets/v1/css/ui.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header id="headerWrap" data-include="../../../layout/header.html"></header>
+    <!-- //헤더영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <section id="container" data-title="주니어캠퍼스 예약내역 확인 및 결제">
+      <div class="section">
+        <h2 class="titH2">예약 확인 및 결제</h2>
+        <div class="reservationWrap">
+          <div class="left">
+            <h3 class="titH3">예약자 정보</h3>
+            <div class="dlInfoBox">
+              <dl>
+                <dt>성명</dt>
+                <dd class="pl20 tl">박수용</dd>
+              </dl>
+              <dl>
+                <dt>생년월일</dt>
+                <dd class="pl20 tl">YYYY.MM.DD</dd>
+              </dl>
+              <dl>
+                <dt>휴대폰 번호</dt>
+                <dd class="pl20 tl">010-3172-0000</dd>
+              </dl>
+              <dl>
+                <dt>이메일</dt>
+                <dd class="pl20 tl">sysy@gsitm.com</dd>
+              </dl>
+            </div>
+
+            <!-- 2023-03-30 -->
+            <div class="flex mt60 mb20">
+              <h3 class="titH3 mb0">
+                인솔자 정보
+                <div class="tooltipWrap mtm4">
+                  <a href="#none" class="tooltip" role="button" data-width="230"
+                    >자세한 내용 확인</a
+                  >
+                  <div class="tooltipPop">
+                    <strong>보호자 정보를 정확하게 기입해 주세요.</strong>
+                  </div>
+                </div>
+              </h3>
+              <p class="impoText mla">
+                <span class="impo">*</span>항목은 필수 입력 항목입니다.
+              </p>
+            </div>
+
+            <div class="dlInfoBox mt15">
+              <dl class="full">
+                <dt class="flex">
+                  인솔자 정보
+                  <div class="checkbox mla">
+                    <input type="checkbox" id="check2" /><label for="check2"
+                      ><i></i>예약자 정보와 동일</label
+                    >
+                  </div>
+                </dt>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Name0" class="tit"
+                      >성명<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox"><input type="text" id="Name0" /></div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Phone0" class="tit"
+                      >휴대폰 번호<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Phone0" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Birthday0" class="tit"
+                      >생년월일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Birthday0" />
+                    </div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Email0" class="tit"
+                      >이메일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Email0" />
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <!-- //2023-03-30 -->
+
+            <!-- 2023-03-30 -->
+            <!-- 2023-03-20 -->
+            <div class="flex mt60 mb20">
+              <h3 class="titH3 mb0">
+                이용자 정보
+                <div class="tooltipWrap mtm4">
+                  <a href="#none" class="tooltip" role="button" data-width="230"
+                    >자세한 내용 확인</a
+                  >
+                  <div class="tooltipPop">
+                    <strong>보호자 정보를 정확하게 기입해 주세요.</strong>
+                  </div>
+                </div>
+              </h3>
+              <p class="impoText mla">
+                <span class="impo">*</span>항목은 필수 입력 항목입니다.
+              </p>
+            </div>
+            <!-- //2023-03-20 -->
+            <!-- //2023-03-30 -->
+
+            <div class="dlInfoBox mt15">
+              <dl class="full">
+                <dt>이용자 정보 1</dt>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Name1" class="tit"
+                      >성명<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox"><input type="text" id="Name1" /></div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Birthday1" class="tit"
+                      >생년월일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Birthday1" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <p class="tit">성별<span class="impo">중요</span></p>
+                    <div class="toggleRadio">
+                      <input type="radio" id="radio1_1" name="radioG1_1" />
+                      <label for="radio1_1"><i></i>남아</label>
+                      <input type="radio" id="radio1_2" name="radioG1_1" />
+                      <label for="radio1_2"><i></i>여아</label>
+                    </div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <p class="tit">
+                      주니어 캠퍼스 체험 유무<span class="impo">중요</span>
+                    </p>
+                    <div class="toggleRadio">
+                      <input type="radio" id="radio2_1" name="radioG1_2" />
+                      <label for="radio2_1"><i></i>체험 이력 있음</label>
+                      <input type="radio" id="radio2_2" name="radioG1_2" />
+                      <label for="radio2_2"><i></i>체험 이력 없음 </label>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="dlInfoBox mt60">
+              <dl class="full">
+                <dt>이용자 정보 2</dt>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <label for="Name2" class="tit"
+                      >성명<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox"><input type="text" id="Name2" /></div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <label for="Birthday2" class="tit"
+                      >생년월일<span class="impo">중요</span></label
+                    >
+                    <div class="inputBox">
+                      <input type="text" id="Birthday2" />
+                    </div>
+                  </div>
+                </dd>
+                <dd class="flex pb15">
+                  <div class="formBox wp50">
+                    <p class="tit">성별<span class="impo">중요</span></p>
+                    <div class="toggleRadio">
+                      <input type="radio" id="radio3_1" name="radioG2_1" />
+                      <label for="radio3_1"><i></i>남아</label>
+                      <input type="radio" id="radio3_2" name="radioG2_1" />
+                      <label for="radio3_2"><i></i>여아</label>
+                    </div>
+                  </div>
+                  <div class="formBox wp50 mt0 ml20">
+                    <p class="tit">
+                      주니어 캠퍼스 체험 유무<span class="impo">중요</span>
+                    </p>
+                    <div class="toggleRadio">
+                      <input type="radio" id="radio4_1" name="radioG2_2" />
+                      <label for="radio4_1"><i></i>체험 이력 있음</label>
+                      <input type="radio" id="radio4_2" name="radioG2_2" />
+                      <label for="radio4_2"><i></i>체험 이력 없음 </label>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+
+            <h3 class="titH3 mt60 mb10">탑승 유의 사항 확인 및 동의</h3>
+            <div class="agreePopCheckBox">
+              <a href="#pop1" class="popOpen">
+                <span class="agree">동의</span>
+                주니어캠퍼스 준비 사항을 확인 및 숙지 하였습니다.
+                <span class="more"></span>
+              </a>
+            </div>
+
+            <h3 class="titH3 mt60">결제</h3>
+
+            <!-- 2023-03-21 추가 -->
+            <p class="mt35 bold">바우처 할인</p>
+            <div class="grayBox mt20">
+              <p class="dotText">바우처 할인 금액</p>
+              <div class="mla flex alignCenter formBox">
+                <div class="inputBox w200 right">
+                  <input type="text" class="inpNumber" data-minus="true" /><span
+                    class="util"
+                    >원</span
+                  >
+                </div>
+                <a href="#voucher" class="button black fwNormal popOpen"
+                  >등록/적용</a
+                >
+                <a href="#" class="button line fwNormal ml5">사용취소</a>
+              </div>
+            </div>
+            <!-- //2023-03-21 -->
+
+            <p class="mb15 mt35 bold">결제 수단</p>
+            <div class="cashChoice">
+              <button class="on">
+                <i class="icoCash1"></i>
+                <p>신용카드(국내 발급)</p>
+              </button>
+              <button>
+                <i class="icoCash1"></i>
+                <p>신용카드(해외 발급)</p>
+              </button>
+              <button>
+                <i class="icoCash2"></i>
+                <p>네이버 페이</p>
+              </button>
+              <button>
+                <i class="icoCash3"></i>
+                <p>카카오 페이</p>
+              </button>
+              <button>
+                <i class="icoCash4"></i>
+                <p>토스 페이</p>
+              </button>
+            </div>
+
+            <h3 class="titH3 mt60">결제 유의사항</h3>
+            <ul class="bulletList">
+              <li>
+                해외 발급 신용카드로 결제 시 환율 영향으로 인해 별도 수수료가
+                발생 될 수 있습니다.
+              </li>
+              <li>
+                BMW 드라이빙 센터는 고객 예약시 발생된 별도 수수료를 책임 지지
+                않습니다
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="rightBox">
+              <div class="titHead">
+                <h3 class="titH3">예약자 정보</h3>
+                <!-- 2023-03-02 -->
+                <a href="#" class="button small2 black mla">변경하기</a>
+              </div>
+              <div class="dlInfoBox mt11">
+                <dl>
+                  <dt>체험 프로그램</dt>
+                  <dd>주니어캠퍼스 실험실</dd>
+                </dl>
+                <dl>
+                  <dt>체험 일자</dt>
+                  <dd>2023년 1월 27일(일)</dd>
+                </dl>
+                <dl>
+                  <dt>체험 시간</dt>
+                  <dd>오전 9:40</dd>
+                </dl>
+                <dl>
+                  <dt class="flex alignCenter">체험 인원</dt>
+                  <dd>
+                    일반X1명 <br />
+                    과학동아기자단X1명<br />
+                    유가족(유공자/의사자)X1명
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="dlInfoBox mt5">
+                <dl>
+                  <dt>체험 프로그램 <i class="icoPackage ml10">패키지</i></dt>
+                  <dd>주니어캠퍼스 워크샵</dd>
+                </dl>
+                <dl>
+                  <dt>체험 일자</dt>
+                  <dd>2023년 1월 27일(일)</dd>
+                </dl>
+                <dl>
+                  <dt>체험 시간</dt>
+                  <dd>오전 9:40</dd>
+                </dl>
+                <dl>
+                  <dt class="flex alignCenter">체험 인원</dt>
+                  <dd>
+                    일반X1명 <br />
+                    과학동아기자단X1명<br />
+                    유가족(유공자/의사자)X1명
+                  </dd>
+                </dl>
+              </div>
+
+              <h3 class="titH3 mt60">결제 금액</h3>
+              <div class="dlInfoBox grid">
+                <div class="left">
+                  <h2>
+                    주니어<br />
+                    캠퍼스<br />
+                    <strong>실험실</strong>
+                  </h2>
+                </div>
+                <dl>
+                  <dt>일반(10,000원x1)</dt>
+                  <dd class="w120">10,000원</dd>
+                </dl>
+                <dl>
+                  <dt>과학동아기자단(8,000원x1)</dt>
+                  <dd class="w120">8,000원</dd>
+                </dl>
+                <dl>
+                  <dt>유가족(유공자/의사자)(5,000원x1)</dt>
+                  <dd class="w120">5,000원</dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <strong class="fc262626">프로그램 이용료 합계</strong>
+                  </dt>
+                  <dd class="w120">
+                    <strong class="fc262626">23,000원</strong>
+                  </dd>
+                </dl>
+              </div>
+              <div class="dlInfoBox grid lineT2 mt5">
+                <div class="left">
+                  <h2>
+                    주니어<br />
+                    캠퍼스<br />
+                    <strong>워크숍</strong>
+                  </h2>
+                </div>
+                <dl>
+                  <dt>일반(12,000원x1)</dt>
+                  <dd class="w120">12,000원</dd>
+                </dl>
+                <dl>
+                  <dt>과학동아기자단(8,000원x1)</dt>
+                  <dd class="w120">8,000원</dd>
+                </dl>
+                <dl>
+                  <dt>유가족(유공자/의사자)(5,000원x1)</dt>
+                  <dd class="w120">5,000원</dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <strong class="fc262626">프로그램 이용료 합계</strong>
+                  </dt>
+                  <dd class="w120">
+                    <strong class="fc262626">23,000원</strong>
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="dlInfoBox grid mt5 lineT2">
+                <div class="left">
+                  <h2>
+                    패키지<br />
+                    <strong>할인</strong>
+                  </h2>
+                </div>
+                <dl>
+                  <dt>일반 패키지 할인</dt>
+                  <dd class="w120">-6,000원</dd>
+                </dl>
+                <dl>
+                  <dt>과학동아기자단 패키지 할인</dt>
+                  <dd class="w120">-4,000원</dd>
+                </dl>
+                <dl>
+                  <dt>유가족(유공자/의사자) 패키지 할인</dt>
+                  <dd class="w120">-2,000원</dd>
+                </dl>
+                <dl>
+                  <dt><strong class="fc262626">할인 합계</strong></dt>
+                  <dd class="w120">
+                    <strong class="fc262626">-12,000원</strong>
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="totalPaymentBox">
+                <dl>
+                  <dt class="wp100 flex11">총 결제 예정 금액</dt>
+                  <dd class="w120 flex00"><strong>160,000원</strong></dd>
+                </dl>
+              </div>
+
+              <div class="formBox mt10">
+                <div class="flex alignCenter">
+                  <div class="checkbox">
+                    <input type="checkbox" id="check2" /><label for="check2"
+                      ><i></i>제 3자 정보제공 내용에 동의 합니다. (필수)</label
+                    >
+                  </div>
+                  <!-- 2023-03-06 -->
+                  <a href="#" class="mla fz13"
+                    >자세히 보기<i class="icoArrow ml5"></i
+                  ></a>
+                </div>
+
+                <div class="flex alignCenter mt10">
+                  <div class="checkbox">
+                    <input type="checkbox" id="check3" checked /><label
+                      for="check3"
+                      ><i></i>취소 및 환불 규정에 동의합니다. (필수)</label
+                    >
+                  </div>
+                  <!-- 2023-03-06 -->
+                  <a href="#" class="mla fz13"
+                    >자세히 보기<i class="icoArrow ml5"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="btnGroup mt70">
+                <a href="#" class="button wp100">160,000원 결제하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="pop1" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 62rem">
+        <div class="layerHeader">
+          <h1>탑승 유의 사항 약관 동의</h1>
+        </div>
+        <div class="popCont">
+          <h2 class="titH2 mb10">본인 명의 운전 면허증 소지</h2>
+          <p>8세 ~ 13세 초등학생</p>
+          <p>
+            주니어 캠퍼스는 초등학생 대상의 프로그램으로 미취학 어린이 및
+            중고등학생은 수업에 참여할 수 없습니다.
+          </p>
+          <p class="fce30000">
+            8세의 경우 티켓 발권시 나이증명서류를 확인 하오니 의료보험증,
+            주민등록등본, 가족관계증명서 등을 반드시 지참하여 주시기
+            바랍니다.(미 지참시 입장 제한)
+          </p>
+
+          <h2 class="titH2 mb10 mt30">프로그램 시작 20분전 체크인 완료</h2>
+          <p>※ 프로그램 시작 20분전 체크인을 완료하셔야 합니다.</p>
+          <p>※ 지각으로 인해 체크인 미완료 시 이용이 제한 됩니다.</p>
+          <p class="fce30000">
+            고객 과실로 인한 이용 제한 시 환불은 불가합니다.
+          </p>
+
+          <div class="agreeLine">
+            <div class="checkbox">
+              <input type="checkbox" id="agreePop1" checked /><label
+                for="agreePop1"
+                ><i></i>이용/준비 사항을 확인하였으며, 이에 동의합니다.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="popBtnGroup">
+          <button class="button">동의하기</button>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <!-- //팝업 -->
+
+    <!-- 하단 영역 -->
+    <footer id="footerWrap" data-include="../../../layout/footer.html"></footer>
+    <!-- //하단 영역 -->
+
+    <script>
+      $(function () {
+        //에러 테스트
+        // FormMassege.error('#Name1', '에러메시지');
+        // FormMassege.error('#Birthday1', '에러메시지22');
+        //FormMassege.error('#radio1_1', '에러메시지3');
+
+        $(document).on("click", ".cashChoice button", function () {
+          $(this).addClass("on").siblings().removeClass("on");
+          return false;
+        });
+
+        reservationBar();
+      });
+
+      const reservationBar = function () {
+        scrollMotion();
+        setTimeout(scrollMotion, 100);
+        $(window).scroll(function () {
+          scrollMotion();
+        });
+        $(window).on("resize", function () {
+          scrollMotion();
+        });
+
+        function scrollMotion() {
+          const target = ".reservationWrap";
+          const winH = $(window).outerHeight();
+          const scrollT = $(window).scrollTop();
+          const barT = $(target).offset().top;
+          const barH = $(target).find(">.right .rightBox").outerHeight();
+
+          const footerH = $("#footerWrap").outerHeight();
+          const footerT = $("#footerWrap").offset().top;
+
+          $(target).find(">.right").css("min-height", barH);
+
+          if (scrollT + winH - barT >= barH - 70) {
+            if (scrollT + winH >= footerT - 70) {
+              $(target)
+                .find(">.right .rightBox")
+                .removeAttr("style")
+                .removeClass("lock")
+                .addClass("bottom");
+            } else {
+              $(target)
+                .find(">.right .rightBox")
+                .addClass("lock")
+                .removeClass("bottom");
+            }
+          } else {
+            $(target)
+              .find(">.right .rightBox")
+              .removeAttr("style")
+              .removeClass("bottom lock");
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

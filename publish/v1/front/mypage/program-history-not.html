@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>BMW Driving Center</title>
+    <link href="../../../../static/assets/v1/css/ui.min.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../static/assets/v1/js/ui.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header id="headerWrap" data-include="../../layout/header.html"></header>
+    <!-- //헤더영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <section id="container">
+      <div class="section mb100">
+        <div class="titLineBox">
+          <h2 class="titH2 mb35">My Page</h2>
+        </div>
+
+        <!-- 마이페이지 상단 상태 영역 -->
+        <div class="mypageInfoBox" data-include="../mypage/mypage.html"></div>
+        <!-- //마이페이지 상단 상태 영역 -->
+
+        <div class="tabList depth col6 mt60">
+          <div class="tab">
+            <a href="#" class="on">예약 내역</a>
+            <div class="tabDepthList">
+              <a href="#" class="depth2 on">Driving 프로그램 예약 내역</a>
+              <a href="#" class="depth2">주니어 캠퍼스 예약 내역</a>
+            </div>
+          </div>
+          <div class="tab">
+            <a href="#">이수 내역</a>
+          </div>
+          <div class="tab">
+            <a href="#">Driving 배지 미션 </a>
+          </div>
+          <div class="tab">
+            <a href="#">BMW 바우처</a>
+          </div>
+          <div class="tab">
+            <a href="#">회원 정보 관리</a>
+            <div class="tabDepthList">
+              <a href="#" class="depth2">회원 정보 수정</a>
+              <a href="#" class="depth2">BMW DC 회원 탈퇴</a>
+              <a href="#" class="depth2">BMW DC 회원 통합</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="periodBox">
+          <p class="tit">기간선택</p>
+          <div class="toggleRadio type2">
+            <input type="radio" id="radio1_1" name="radioG1" checked />
+            <label for="radio1_1"><i></i>1개월</label>
+            <input type="radio" id="radio1_2" name="radioG1" />
+            <label for="radio1_2"><i></i>3개월</label>
+            <input type="radio" id="radio1_3" name="radioG1" />
+            <label for="radio1_3"><i></i>6개월</label>
+            <input type="radio" id="radio1_4" name="radioG1" />
+            <label for="radio1_4"><i></i>직접입력</label>
+          </div>
+          <div class="calendarBox">
+            <div class="inputBox datepicker disabled">
+              <input type="text" placeholder="시작일" disabled /><i></i>
+            </div>
+            <span>~</span>
+            <div class="inputBox datepicker">
+              <input type="text" placeholder="종료일" /><i></i>
+            </div>
+            <button class="button small black w100 fwNormal">조회하기</button>
+
+            <p class="text">※ 기간 설정은 최대 1년까지만 검색 가능합니다.</p>
+          </div>
+        </div>
+
+        <div class="mt50 mb10">
+          <!-- 
+            선택 : black
+            비선택 : line2
+          -->
+          <a href="#" class="button small2 black">전체(N)</a>
+          <a href="#" class="button small2 line">예약완료(N)</a>
+          <a href="#" class="button small2 line">예약취소(N)</a>
+        </div>
+
+        <!-- 리스트 -->
+        <section class="mypageListWrap">
+          <!-- 항목 1-->
+          <div class="list">
+            <div class="imgBox">
+              <img
+                src="../../../../static/assets/v1/images/test/sample_img1.png"
+                alt=""
+              />
+            </div>
+            <div class="dlInfoBox col4">
+              <dl class="full">
+                <dt>주문번호</dt>
+                <dd class="flex alignCenter">
+                  <a href="#" class="underline"
+                    >2023010300000000<i class="icoArrow mtm4 ml5"
+                      >자세히 보기</i
+                    ></a
+                  >
+                  <a href="#cancelPop" class="button small2 line2 mla popOpen"
+                    >예약취소</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>예약 일자</dt>
+                <dd class="tl fc262626">2023.01.04(월)</dd>
+              </dl>
+              <dl>
+                <dt>예약 상태</dt>
+                <!-- 
+                  예약상태
+                  1. 예약완료 : fcGreen
+                  2. 예약취소 : fcRed
+                -->
+                <dd class="tl fcGreen">예약완료</dd>
+              </dl>
+              <dl>
+                <dt>체험 프로그램</dt>
+                <dd class="tl">Test Drive</dd>
+              </dl>
+              <dl>
+                <dt>체험 일시</dt>
+                <dd class="tl">2023.01.04(월) | 오전 9:40</dd>
+              </dl>
+              <dl>
+                <dt>체험 차량</dt>
+                <dd class="tl">BMW 32Oi M Sport Package</dd>
+              </dl>
+            </div>
+          </div>
+          <!-- //항목 1-->
+
+          <!-- 항목 2 -->
+          <div class="list">
+            <div class="imgBox">
+              <img
+                src="../../../../static/assets/v1/images/test/sample_img1.png"
+                alt=""
+              />
+            </div>
+            <div class="dlInfoBox col4">
+              <dl class="full">
+                <dt>주문번호</dt>
+                <dd class="flex alignCenter">
+                  <a href="#" class="underline"
+                    >2023010300000000<i class="icoArrow mtm4 ml5"
+                      >자세히 보기</i
+                    ></a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>예약 일자</dt>
+                <dd class="tl fc262626">2023.01.04(월)</dd>
+              </dl>
+              <dl>
+                <dt>예약 상태</dt>
+                <!-- 
+                  예약상태
+                  1. 예약완료 : fcGreen
+                  2. 예약취소 : fcRed
+                -->
+                <dd class="tl fcRed">예약취소</dd>
+              </dl>
+              <dl>
+                <dt>체험 프로그램</dt>
+                <dd class="tl">Test Drive</dd>
+              </dl>
+              <dl>
+                <dt>체험 일시</dt>
+                <dd class="tl">2023.01.04(월) | 오전 9:40</dd>
+              </dl>
+              <dl>
+                <dt>체험 차량</dt>
+                <dd class="tl">BMW 32Oi M Sport Package</dd>
+              </dl>
+            </div>
+          </div>
+          <!-- //항목 2 -->
+        </section>
+        <!-- //리스트 -->
+
+        <div class="btnGroup mt70">
+          <a href="#" class="button line w370">더보기</a>
+        </div>
+      </div>
+    </section>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 팝업 -->
+    <div id="level2Pop" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 76rem">
+        <div class="layerHeader">
+          <h1>LV.2 달성 조건 안내</h1>
+        </div>
+        <div class="popCont">
+          <p>
+            BMW Driving Center LV.2 레벨업을 위해서는 아래의 프로그램 중 한 개
+            이상을 예약 및 이수 완료 하셔야 합니다.
+          </p>
+          <p>
+            드라이빙 프로그램 조작 미숙으로 인한 참여 처리시에는 레벨업이
+            진행되지 않습니다.
+          </p>
+          <div class="tableList mt20">
+            <table>
+              <colgroup>
+                <col style="width: 20rem" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">프로그램 명</th>
+                  <th scope="col">프로그램 설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Intensive</td>
+                  <td class="tl">
+                    다양한 노면에서의 긴급 제동과 회피, 언더스티어와 오버스티어
+                    제어, 짐카나를 통한 종합적인 차량 컨트롤 교육으로 구성되어
+                    있습니다.<br />
+                    <a href="#"
+                      ><strong>프로그램 자세히 보기</strong>
+                      <i class="icoArrow"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>M/JCW Intensive</td>
+                  <td class="tl">
+                    고성능 차량(BMW M, MINI JCW)을 주행하며, 드라이빙 스킬을
+                    업그레이드하는 프로그램입니다.<br />
+                    <a href="#"
+                      ><strong>프로그램 자세히 보기</strong>
+                      <i class="icoArrow"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>M Core</td>
+                  <td class="tl">
+                    BMW M 고객분들이 가장 선호하는 써큘러 에서의 드리프팅 및
+                    트랙 주행에 중점을 둔 프로그램입니다.<br />
+                    <a href="#"
+                      ><strong>프로그램 자세히 보기</strong>
+                      <i class="icoArrow"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+
+    <div id="level3Pop" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 76rem">
+        <div class="layerHeader">
+          <h1>LV.3 달성 조건 안내</h1>
+        </div>
+        <div class="popCont">level3 달성조건 내용 수급 필요</div>
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+
+    <div id="cancelPop" class="layerPopWrap">
+      <div class="bg"></div>
+      <div class="layerPopCont" tabindex="0" style="width: 76rem">
+        <div class="layerHeader">
+          <h1>예약 취소</h1>
+        </div>
+        <div class="popCont">
+          <h2>취소 대상 예약 정보</h2>
+          <div class="dlInfoBox mt10">
+            <dl>
+              <dt>체험 프로그램</dt>
+              <dd>Test Drive</dd>
+            </dl>
+            <dl>
+              <dt>체험 차량</dt>
+              <dd>BMW 32Oi M Sport Package</dd>
+            </dl>
+            <dl>
+              <dt>체험 일시</dt>
+              <dd>2023.01.04(월) / 오전 9:40</dd>
+            </dl>
+            <dl>
+              <dt>체험 인원</dt>
+              <dd>2명</dd>
+            </dl>
+          </div>
+
+          <h2 class="mt35">취소 사유 선택</h2>
+          <div class="formBox mt10">
+            <div class="selectBox">
+              <select title="취소 사유">
+                <option value="">취소 사유를 선택해주세요.</option>
+                <option value="1">1일</option>
+                <option value="2">2일</option>
+                <option value="3">3일</option>
+              </select>
+            </div>
+          </div>
+
+          <h2 class="mt35">취소 및 환불 예상 정보</h2>
+          <div class="dlInfoBox mt10">
+            <dl>
+              <dt>프로그램 이용료 합계</dt>
+              <dd>160,000원</dd>
+            </dl>
+            <dl>
+              <dt>예상 취소 수수료</dt>
+              <dd>0원</dd>
+            </dl>
+            <dl>
+              <dt><strong>환불 예상 금액</strong></dt>
+              <dd><strong class="fc262626">160,000원</strong></dd>
+            </dl>
+          </div>
+
+          <div class="checkbox mt15">
+            <input type="checkbox" id="check1" /><label for="check1"
+              ><i></i>BMW Driving Center 취소 환불 규약에 동의합니다.</label
+            >
+          </div>
+        </div>
+        <div class="popBtnGroup">
+          <button class="button">예약 취소하기</button>
+        </div>
+
+        <a href="#" class="btnClose btnPopClose">팝업닫기</a>
+      </div>
+    </div>
+    <!-- //팝업 -->
+
+    <!-- 하단 영역 -->
+    <footer id="footerWrap" data-include="../../layout/footer.html"></footer>
+    <!-- //하단 영역 -->
+    <script></script>
+  </body>
+</html>
